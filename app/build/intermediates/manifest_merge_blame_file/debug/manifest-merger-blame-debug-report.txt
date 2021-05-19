@@ -1,0 +1,197 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.Innospectra.ISCScanNano"
+4    android:versionCode="4"
+5    android:versionName="2.14" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:6:5-68
+11-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:6:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:7:5-74
+12-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:7:22-71
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:8:5-67
+13-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:8:22-64
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:9:5-81
+14-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:10:5-80
+15-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:10:22-77
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:11:5-81
+16-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:11:22-78
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:12:5-79
+17-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:12:22-76
+18
+19    <uses-feature
+19-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:14:5-16:35
+20        android:name="android.hardware.bluetooth_le"
+20-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:15:9-53
+21        android:required="true" />
+21-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:16:9-32
+22
+23    <application
+23-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:18:5-89:19
+24        android:allowBackup="true"
+24-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:19:9-35
+25        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+25-->[com.android.support:support-compat:28.0.0] C:\Users\train\.gradle\caches\transforms-3\fd21cae334d7b9c6ecdf09e01e93f7aa\transformed\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+26        android:debuggable="true"
+27        android:icon="@mipmap/icon_isc_logo"
+27-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:20:9-45
+28        android:label="@string/app_name"
+28-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:21:9-41
+29        android:testOnly="true"
+30        android:theme="@style/AppTheme" >
+30-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:22:9-40
+31        <activity android:name="com.Innospectra.NanoScan.SendMessageViewActivity" />
+31-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:24:9-70
+31-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:24:19-58
+32        <activity
+32-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:25:9-34:20
+33            android:name="com.Innospectra.NanoScan.HomeViewActivity"
+33-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:26:13-45
+34            android:label="@string/app_name"
+34-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:27:13-45
+35            android:screenOrientation="portrait" >
+35-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:28:13-49
+36            <intent-filter>
+36-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:29:13-33:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:30:17-69
+37-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:30:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:32:17-77
+39-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:32:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity
+42-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:35:9-39:47
+43            android:name="com.Innospectra.NanoScan.InformationViewActivity"
+43-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:36:13-52
+44            android:label="@string/title_activity_info"
+44-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:37:13-56
+45            android:screenOrientation="portrait"
+45-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:38:13-49
+46            android:theme="@style/AppTheme" />
+46-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:39:13-44
+47        <activity
+47-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:40:9-44:47
+48            android:name="com.Innospectra.NanoScan.SettingsViewActivity"
+48-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:41:13-49
+49            android:label="@string/title_activity_settings"
+49-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:42:13-60
+50            android:screenOrientation="portrait"
+50-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:43:13-49
+51            android:theme="@style/AppTheme" />
+51-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:44:13-44
+52        <activity
+52-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:45:9-48:55
+53            android:name="com.Innospectra.NanoScan.ScanViewActivity"
+53-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:46:13-45
+54            android:screenOrientation="portrait"
+54-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:47:13-49
+55            android:windowSoftInputMode="adjustPan" />
+55-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:48:13-52
+56        <activity
+56-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:49:9-51:52
+57            android:name="com.Innospectra.NanoScan.ConfigureViewActivity"
+57-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:50:13-50
+58            android:screenOrientation="portrait" />
+58-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:51:13-49
+59        <activity
+59-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:52:9-54:52
+60            android:name="com.Innospectra.NanoScan.DeviceInfoViewActivity"
+60-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:53:13-51
+61            android:screenOrientation="portrait" />
+61-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:54:13-49
+62        <activity
+62-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:55:9-57:52
+63            android:name="com.Innospectra.NanoScan.DeviceStatusViewActivity"
+63-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:56:13-53
+64            android:screenOrientation="portrait" />
+64-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:57:13-49
+65        <activity
+65-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:58:9-60:52
+66            android:name="com.Innospectra.NanoScan.ScanConfigurationsViewActivity"
+66-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:59:13-59
+67            android:screenOrientation="portrait" />
+67-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:60:13-49
+68        <activity
+68-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:61:9-63:52
+69            android:name="com.Innospectra.NanoScan.SelectDeviceViewActivity"
+69-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:62:13-53
+70            android:screenOrientation="portrait" />
+70-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:63:13-49
+71        <activity
+71-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:64:9-67:55
+72            android:name="com.Innospectra.NanoScan.AddScanConfigViewActivity"
+72-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:65:13-54
+73            android:screenOrientation="portrait"
+73-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:66:13-49
+74            android:windowSoftInputMode="adjustPan" />
+74-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:67:13-52
+75        <activity
+75-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:68:9-70:52
+76            android:name="com.Innospectra.NanoScan.ActiveConfigDetailViewActivity"
+76-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:69:13-59
+77            android:screenOrientation="portrait" />
+77-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:70:13-49
+78        <activity
+78-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:71:9-75:47
+79            android:name="com.Innospectra.NanoScan.LicenseViewActivity"
+79-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:72:13-48
+80            android:label="@string/license"
+80-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:73:13-44
+81            android:screenOrientation="portrait"
+81-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:74:13-49
+82            android:theme="@style/AppTheme" />
+82-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:75:13-44
+83        <activity
+83-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:76:9-79:52
+84            android:name="com.Innospectra.NanoScan.ActivationViewActivity"
+84-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:77:13-51
+85            android:label="@string/activation"
+85-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:78:13-47
+86            android:screenOrientation="portrait" />
+86-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:79:13-49
+87        <activity
+87-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:80:9-82:52
+88            android:name="com.Innospectra.NanoScan.AdvanceDeviceStatusViewActivity"
+88-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:81:13-60
+89            android:screenOrientation="portrait" />
+89-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:82:13-49
+90        <activity
+90-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:83:9-85:52
+91            android:name="com.Innospectra.NanoScan.ErrorStatusViewActivity"
+91-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:84:13-52
+92            android:screenOrientation="portrait" />
+92-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:85:13-49
+93        <activity
+93-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:86:9-88:52
+94            android:name="com.Innospectra.NanoScan.AdvanceErrorStatusViewActivity"
+94-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:87:13-59
+95            android:screenOrientation="portrait" />
+95-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\app\src\main\AndroidManifest.xml:88:13-49
+96
+97        <service
+97-->[:ISCSDK-release:] C:\Users\train\.gradle\caches\transforms-3\781816a248e843c2c4d2ab077ac43500\transformed\ISCSDK-release\AndroidManifest.xml:15:9-18:39
+98            android:name="com.ISCSDK.ISCNIRScanSDK"
+98-->[:ISCSDK-release:] C:\Users\train\.gradle\caches\transforms-3\781816a248e843c2c4d2ab077ac43500\transformed\ISCSDK-release\AndroidManifest.xml:16:13-52
+99            android:enabled="true"
+99-->[:ISCSDK-release:] C:\Users\train\.gradle\caches\transforms-3\781816a248e843c2c4d2ab077ac43500\transformed\ISCSDK-release\AndroidManifest.xml:17:13-35
+100            android:exported="true" />
+100-->[:ISCSDK-release:] C:\Users\train\.gradle\caches\transforms-3\781816a248e843c2c4d2ab077ac43500\transformed\ISCSDK-release\AndroidManifest.xml:18:13-36
+101    </application>
+102
+103</manifest>
