@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/active_add_scan_config.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_active_scan.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_configuration.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_device_info.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_device_status.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_error_scan_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_error_scan_status.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_error_status.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_error_status_item.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_info.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_new_scan.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_scan.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_scan_conf.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_send_message_view.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_settings.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/activity_test_message_view.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/advance_device_status.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/advance_device_status_item.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/license_key.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/license_view.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/main_page.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/page_graph_absorbance.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/page_graph_intensity.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/page_graph_reference.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/page_graph_reflectance.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/row_graph_list_item.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/row_info_item.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/row_nano_scan_item.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/row_scan_configuration_item.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/row_slew_scan_configuration_item.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/train/Desktop/matid-testing/NIRScan_Android/app/src/main/res/layout/row_stored_scan_item.xml" value="0.35260416666666666" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

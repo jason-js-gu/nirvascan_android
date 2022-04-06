@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ISC_NIRScan_Android-master.iml" filepath="$PROJECT_DIR$/.idea/modules/ISC_NIRScan_Android-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MPChartLib/ISC_NIRScan_Android-master.MPChartLib.iml" filepath="$PROJECT_DIR$/.idea/modules/MPChartLib/ISC_NIRScan_Android-master.MPChartLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ISC_NIRScan_Android-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ISC_NIRScan_Android-master.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NIRScan_Android.iml" filepath="$PROJECT_DIR$/.idea/modules/NIRScan_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MPChartLib/NIRScan_Android.MPChartLib.iml" filepath="$PROJECT_DIR$/.idea/modules/MPChartLib/NIRScan_Android.MPChartLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NIRScan_Android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NIRScan_Android.app.iml" />
     </modules>
   </component>
 </project>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\train\\Desktop\\ISC_NIRScan_Android-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\train\\Desktop\\matid-testing\\NIRScan_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\train\\.gradle\\caches\\transforms-3\\2312aa2572b889b19bade5ebd0fe7f28\\transformed\\support-media-compat-28.0.0\\res\\values-v21\\values-v21.xml",
@@ -23,14 +23,14 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\train\\Desktop\\ISC_NIRScan_Android-master\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "source": "C:\\Users\\train\\Desktop\\matid-testing\\NIRScan_Android\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "55",
+                        "startOffsets": "57",
                         "endLines": "5",
                         "endColumns": "12",
-                        "endOffsets": "189"
+                        "endOffsets": "194"
                     },
                     "to": {
                         "startLines": "6",

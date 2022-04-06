@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ISC NIRScan</string>
+    <string name="app_name">MatID</string>
 
     <string name="action_info">Info</string>
     <string name="action_settings">Settings</string>

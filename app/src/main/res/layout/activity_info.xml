@@ -15,8 +15,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/dip16"
         android:contentDescription="@string/desc_info"
-        android:paddingEnd="@dimen/dip32"
         android:paddingStart="@dimen/dip32"
+        android:paddingEnd="@dimen/dip32"
         android:src="@drawable/isc_logo" />
 
     <ListView

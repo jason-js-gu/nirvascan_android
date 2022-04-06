@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\train\\Desktop\\ISC_NIRScan_Android-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nb\\values-nb.xml",
+            "outputFile": "C:\\Users\\train\\Desktop\\matid-testing\\NIRScan_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nb\\values-nb.xml",
             "map": [
                 {
                     "source": "C:\\Users\\train\\.gradle\\caches\\transforms-3\\fd21cae334d7b9c6ecdf09e01e93f7aa\\transformed\\support-compat-28.0.0\\res\\values-nb\\values-nb.xml",

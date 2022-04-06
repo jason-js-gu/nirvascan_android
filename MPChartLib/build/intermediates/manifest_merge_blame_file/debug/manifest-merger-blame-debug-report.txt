@@ -13,8 +13,8 @@
 13    -->
 14    <uses-sdk
 15        android:minSdkVersion="9"
-15-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\MPChartLib\src\main\AndroidManifest.xml
+15-->C:\Users\train\Desktop\matid-testing\NIRScan_Android\MPChartLib\src\main\AndroidManifest.xml
 16        android:targetSdkVersion="27" />
-16-->C:\Users\train\Desktop\ISC_NIRScan_Android-master\MPChartLib\src\main\AndroidManifest.xml
+16-->C:\Users\train\Desktop\matid-testing\NIRScan_Android\MPChartLib\src\main\AndroidManifest.xml
 17
 18</manifest>

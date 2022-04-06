@@ -20,6 +20,7 @@
         android:icon="@mipmap/icon_isc_logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
         tools:replace="allowBackup">
         <activity android:name=".SendMessageViewActivity"></activity>
         <activity

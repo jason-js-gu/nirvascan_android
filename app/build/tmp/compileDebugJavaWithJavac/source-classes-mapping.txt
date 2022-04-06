@@ -109,6 +109,7 @@ com/Innospectra/NanoScan/ScanViewActivity.java
  com.Innospectra.NanoScan.ScanViewActivity$32
  com.Innospectra.NanoScan.ScanViewActivity$33
  com.Innospectra.NanoScan.ScanViewActivity$34
+ com.Innospectra.NanoScan.ScanViewActivity$34$1
  com.Innospectra.NanoScan.ScanViewActivity$35
  com.Innospectra.NanoScan.ScanViewActivity$36
  com.Innospectra.NanoScan.ScanViewActivity$37
@@ -122,6 +123,7 @@ com/Innospectra/NanoScan/ScanViewActivity.java
  com.Innospectra.NanoScan.ScanViewActivity$44
  com.Innospectra.NanoScan.ScanViewActivity$45
  com.Innospectra.NanoScan.ScanViewActivity$46
+ com.Innospectra.NanoScan.ScanViewActivity$47
  com.Innospectra.NanoScan.ScanViewActivity$5
  com.Innospectra.NanoScan.ScanViewActivity$6
  com.Innospectra.NanoScan.ScanViewActivity$7

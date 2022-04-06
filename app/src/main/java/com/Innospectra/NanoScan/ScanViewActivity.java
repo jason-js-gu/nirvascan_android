@@ -26,6 +26,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
+import android.os.Looper;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.PagerAdapter;
@@ -62,15 +63,26 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.opencsv.CSVWriter;
+
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import static com.ISCSDK.ISCNIRScanSDK.Interpret_intensity;
@@ -85,6 +97,10 @@ import static com.ISCSDK.ISCNIRScanSDK.getStringPref;
 import static com.ISCSDK.ISCNIRScanSDK.storeBooleanPref;
 import static com.ISCSDK.ISCNIRScanSDK.storeStringPref;
 import static com.Innospectra.NanoScan.DeviceStatusViewActivity.GetLampTimeString;
+
+import java.net.HttpURLConnection;
+
+import javax.net.ssl.HttpsURLConnection;
 
 
 /**
@@ -2578,6 +2594,10 @@ public class ScanViewActivity extends Activity {
             }
             data.add(new String[]{"Wavelength (nm),Absorbance (AU),Reference Signal (unitless),Sample Signal (unitless)"});
             int csvIndex;
+
+            //for MatID
+            ArrayList<String> y_to_send = new ArrayList<>();
+
             for (csvIndex = 0; csvIndex < scanResults.getLength(); csvIndex++) {
                 double waves = scanResults.getWavelength()[csvIndex];
                 int intens = scanResults.getUncalibratedIntensity()[csvIndex];
@@ -2585,7 +2605,76 @@ public class ScanViewActivity extends Activity {
                 //float reflect = (float) Scan_Spectrum_Data.getUncalibratedIntensity()[csvIndex] / Scan_Spectrum_Data.getIntensity()[csvIndex];
                 float reference = (float) Scan_Spectrum_Data.getIntensity()[csvIndex];
                 data.add(new String[]{String.valueOf(waves), String.valueOf(absorb),String.valueOf(reference), String.valueOf(intens)});
+
+                //for MatID
+                y_to_send.add(String.valueOf(absorb));
             }
+            //send prefix and y values to MatID
+            final String filename=prefix;
+            ExecutorService executor = Executors.newSingleThreadExecutor();
+            executor.submit(() -> {
+                try {
+                    URL url = new URL("https://matid-app.herokuapp.com/scan/scan_match/");
+                    Map<String, Object> params = new LinkedHashMap<>();
+                    //final String y = "[0.370171, 0.378652, 0.38096, 0.383026, 0.386595, 0.394781, 0.398199, 0.394949, 0.394716, 0.386809, 0.385261, 0.380827, 0.378502, 0.37787, 0.37673, 0.376877, 0.377286, 0.377251, 0.378501, 0.379019, 0.380189, 0.380092, 0.379379, 0.380615, 0.381643, 0.381974, 0.382265, 0.382876, 0.384239, 0.383754, 0.384344, 0.385002, 0.384499, 0.383374, 0.384256, 0.38388, 0.383876, 0.383671, 0.384372, 0.383478, 0.382952, 0.383181, 0.383091, 0.383079, 0.382137, 0.38274, 0.382835, 0.382937, 0.381339, 0.3811, 0.381681, 0.381042, 0.381066, 0.380558, 0.380955, 0.381521, 0.38207, 0.38327, 0.385145, 0.385082, 0.386385, 0.38662, 0.386934, 0.388521, 0.390053, 0.392076, 0.396501, 0.40167, 0.407193, 0.411879, 0.415161, 0.41761, 0.419508, 0.422956, 0.426902, 0.429443, 0.428043, 0.424982, 0.421229, 0.415483, 0.410278, 0.404865, 0.399985, 0.393907, 0.389406, 0.385275, 0.383036, 0.380121, 0.37781, 0.377222, 0.375926, 0.375163, 0.374896, 0.37381, 0.373181, 0.372928, 0.373514, 0.372063, 0.371893, 0.372124, 0.371956, 0.37225, 0.371976, 0.372577, 0.373104, 0.372887, 0.373064, 0.37331, 0.373556, 0.37339, 0.374213, 0.374183, 0.375066, 0.375863, 0.376338, 0.376433, 0.377551, 0.378893, 0.380164, 0.382687, 0.38645, 0.390043, 0.393625, 0.397273, 0.401223, 0.405351, 0.410164, 0.415345, 0.421087, 0.424581, 0.427228, 0.429257, 0.429813, 0.42984, 0.430071, 0.430503, 0.430928, 0.430726, 0.431702, 0.431618, 0.431379, 0.43177, 0.429567, 0.426482, 0.422411, 0.418435, 0.415728, 0.413254, 0.411192, 0.409408, 0.408359, 0.406258, 0.405528, 0.403687, 0.403361, 0.402803, 0.402051, 0.401712, 0.400143, 0.400006, 0.398759, 0.397859, 0.397912, 0.396773, 0.396291, 0.396524, 0.395627, 0.395066, 0.395805, 0.395549, 0.394195, 0.394326, 0.394066, 0.393916, 0.393911, 0.393873, 0.39386, 0.393295, 0.393735, 0.393783, 0.393398, 0.393464, 0.393148, 0.393083, 0.394391, 0.394667, 0.396003, 0.395444, 0.394972, 0.395674, 0.395795, 0.395877, 0.396461, 0.396807, 0.396991, 0.397789, 0.396905, 0.399261, 0.400134, 0.402879, 0.404689, 0.407373, 0.407412, 0.410126, 0.411465, 0.413682, 0.416446, 0.421374, 0.42888, 0.440107, 0.448443, 0.462091, 0.474343, 0.481039, 0.481353, 0.470626, 0.445861, 0.420326, 0.39065, 0.351968, 0.33158, 0.322931, 0.3192, 0.33414, 0.357365, 0.384231, 0.423225, 0.45689]";
+
+                    params.put("file_name", filename);
+                    //params.put("x_data", x_to_send);
+                    params.put("y_data", y_to_send);
+                    //params.put("n_device", n_device);
+
+                    StringBuilder postData = new StringBuilder();
+                    for (Map.Entry<String, Object> param : params.entrySet()) {
+                        if (postData.length() != 0) postData.append('&');
+                        postData.append(URLEncoder.encode(param.getKey(), "UTF-8"));
+                        postData.append('=');
+                        postData.append(URLEncoder.encode(String.valueOf(param.getValue()), "UTF-8"));
+                    }
+                    byte[] postDataBytes = postData.toString().getBytes("UTF-8");
+
+                    HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+                    conn.setRequestMethod("POST");
+                    conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+                    conn.setRequestProperty("Content-Length", String.valueOf(postDataBytes.length));
+                    conn.setDoOutput(true);
+                    conn.getOutputStream().write(postDataBytes);
+
+                    BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream(), "UTF-8"));
+
+                    String str;
+                    while ((str = in.readLine()) != null) {
+                        StringBuffer content = new StringBuffer();
+                        content.append(str);
+                        // back to UI thread to draw the dialog box
+                        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                AlertDialog alertDialog = new AlertDialog.Builder(ScanViewActivity.this).create();
+                                alertDialog.setTitle("MatID：");
+                                alertDialog.setMessage(content.toString());
+                                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                                        new DialogInterface.OnClickListener() {
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                dialog.dismiss();
+                                            }
+                                        });
+                                alertDialog.show();
+                            }
+                        }, 500);
+                        in.close();
+                    }
+                } catch (MalformedURLException | UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                } catch (ProtocolException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            });
+
+
+
             if((isExtendVer && fw_level.compareTo(FW_LEVEL.LEVEL_EXT_2)>=0) || (!isExtendVer &&  fw_level.compareTo(FW_LEVEL.LEVEL_3)>=0))
             {
                 data.add(new String[]{""});

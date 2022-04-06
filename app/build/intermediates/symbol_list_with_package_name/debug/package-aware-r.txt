@@ -794,7 +794,9 @@ drawable ic_splash_screen
 drawable ic_splash_screen_isc
 drawable info_flatx
 drawable isc_info
+drawable isc_info_o
 drawable isc_logo
+drawable isc_logo_o
 drawable led_g
 drawable led_r
 drawable leg_gray
@@ -812,6 +814,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable scan_flatx
 drawable scan_flatx_isc
+drawable scan_flatx_isc_o
 drawable setting_flatx
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1443,6 +1446,7 @@ menu menu_stored_configurations
 mipmap ic_launcher
 mipmap icon_isc
 mipmap icon_isc_logo
+mipmap icon_isc_logo_o
 raw aspirin
 raw bc
 raw bellpepper

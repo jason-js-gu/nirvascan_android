@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_toStartOf="@id/tv_rssi"
-            tools:text="NIRScan Nano" />
+            tools:text="MatID" />
 
         <TextView
             android:id="@+id/tv_nano_mac"
